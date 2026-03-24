@@ -1,7 +1,7 @@
-import AudienceAgentHandbook from './audience-agent-handbook'
+import UMGHandbook from './umg-handbook'
 
 function App() {
-  return <AudienceAgentHandbook />
+  return <UMGHandbook />
 }
 
 export default App
