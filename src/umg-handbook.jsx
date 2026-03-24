@@ -236,9 +236,9 @@ const UMGHandbook = () => {
     }
   };
 
-  const PRIMARY = '#0F766E'; // Professional teal color
-  const GRADIENT = 'linear-gradient(to right, #0F766E, #115E59)';
-  const GRADIENT_DIAGONAL = 'linear-gradient(to bottom right, #0F766E, #134E4A)';
+  const PRIMARY = '#1F2937'; // Professional black/dark color
+  const GRADIENT = 'linear-gradient(to right, #1F2937, #374151)';
+  const GRADIENT_DIAGONAL = 'linear-gradient(to bottom right, #1F2937, #111827)';
 
   const tocItems = [
     { id: 'intro', label: 'Introduction' },
@@ -259,15 +259,11 @@ const UMGHandbook = () => {
       <div className="sticky top-0 z-50 bg-white border-b border-slate-200 shadow-sm">
         <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
           <div className="flex items-center gap-4">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-lg flex items-center justify-center text-white font-bold text-lg" style={{ backgroundColor: PRIMARY }}>
-                UMG
-              </div>
-              <div className="flex flex-col">
-                <span className="text-sm font-semibold text-slate-900">Universal Music Group</span>
-                <span className="text-xs text-slate-600">Audience Agent Prompting Guide</span>
-              </div>
-            </div>
+            <img src="/td-logo.png" alt="Treasure Data" className="h-12" />
+            <div className="h-8 w-px bg-slate-300"></div>
+            <h1 className="text-xl font-semibold text-slate-900">
+              Universal Music Group - Audience Agent Prompting Guide
+            </h1>
           </div>
         </div>
       </div>
@@ -278,7 +274,7 @@ const UMGHandbook = () => {
           <h2 className="text-2xl font-semibold mb-2">
             Music Industry Fan Segmentation & Analysis Best Practices
           </h2>
-          <p className="text-teal-100">Universal Music Group - Treasure Data Audience Agent</p>
+          <p className="text-slate-100">Universal Music Group - Treasure Data Audience Agent</p>
         </div>
       </header>
 
@@ -338,7 +334,7 @@ const UMGHandbook = () => {
               <AlertCircle size={20} style={{ color: PRIMARY }} />
               Key Principle - Date Anchoring:
             </h3>
-            <div className="bg-teal-50 border border-teal-200 rounded-lg p-4">
+            <div className="bg-slate-50 border border-slate-200 rounded-lg p-4">
               <p className="text-slate-700 mb-2">Always specify whether timeframes are based on:</p>
               <ul className="space-y-1 ml-4">
                 <li className="text-slate-700">• Email send date (recommended)</li>
@@ -783,7 +779,7 @@ const UMGHandbook = () => {
                 <span className="flex-shrink-0 w-7 h-7 text-sm font-bold rounded-full flex items-center justify-center hover:scale-110 transition-transform bg-white" style={{ color: PRIMARY }}>
                   {idx + 1}
                 </span>
-                <p className="text-teal-50 pt-1">{item}</p>
+                <p className="text-slate-50 pt-1">{item}</p>
               </div>
             ))}
           </div>
@@ -795,7 +791,7 @@ const UMGHandbook = () => {
             <TrendingUp size={28} className="animate-bounce-subtle" />
             <h2 className="text-2xl font-semibold">Test Your UMG Prompt Skills</h2>
           </div>
-          <p className="text-teal-100 mb-6">
+          <p className="text-slate-100 mb-6">
             Enter a music industry prompt below and get instant feedback on its quality
           </p>
 
@@ -947,12 +943,10 @@ const UMGHandbook = () => {
       <footer className="bg-white border-t border-slate-200 mt-12">
         <div className="max-w-5xl mx-auto px-6 py-6">
           <div className="flex items-center justify-center gap-3">
-            <div className="w-6 h-6 rounded flex items-center justify-center text-white font-bold text-xs" style={{ backgroundColor: PRIMARY }}>
-              UMG
-            </div>
             <p className="text-center text-slate-600 text-sm">
               Universal Music Group - Treasure Data Audience Agent Integration
             </p>
+            <img src="/td-logo.png" alt="Treasure Data" className="h-8" />
           </div>
         </div>
       </footer>
